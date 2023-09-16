@@ -1,0 +1,399 @@
+/* ----------------------- Typography ----------------------- */
+
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.3em;
+  font-weight: 900;
+  text-transform: uppercase;
+  padding: 0 6px;
+ 
+  @include mq($xi) {
+    font-size: 2.7em;
+  }
+
+  @include mq($sm) {
+    font-size: 2.9em;
+  }
+
+  @include mq($md) {
+    font-size: 6.0em;
+    margin-bottom: 40px;
+  }
+
+  @include mq($lg) {
+    font-size: 6.0em;
+    padding: 0 27px;
+  }
+}
+
+h2 {
+  color: #000;
+  @include mq($md){
+    text-align: left;
+  }
+}
+
+#welcome {
+  padding: 100px 20px 0;
+  height: 100vh;
+  opacity: 1.0;
+  z-index: 1000;
+  color: #fff;
+  text-align: center;
+
+  @include mq($md) {
+    padding-top: 20px;
+  }
+
+  h2 {
+    opacity: 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5em;
+
+    font-weight: 900;
+    @include mq($md) {
+      font-size: 2.0em;
+    }
+
+    @include mq($lg) {
+      font-size: 2.2em;
+    }
+  }
+}
+
+.welcome-header {
+  @include mq($lg) {
+    margin-top: 20rem;
+  }
+}
+
+.typing {
+  margin: 0 auto;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 1.5s steps(70, end);
+  @include mq($md) {
+    animation: typing 3.5s steps(70, end);
+  }
+}
+
+@keyframes typing {
+  from {width: 0}
+  to {width: 100%}
+}
+
+#language-icons {
+  list-style-type: none;
+  padding-left: 0;
+
+  li {
+    display: inline-block;
+    padding: 2px 10px;
+    margin: 0 2px;
+    font-size: 0.7em;
+    @include mq($md) {
+      font-size: 1.2em;
+      margin: 0 5px;
+    }
+
+    @include mq($lg) {
+      font-size: 1.3em;
+    }
+  }
+}
+
+span {
+  color: #fff;
+}
+
+// About section 
+.info {
+
+  h3 {
+    text-align: center;
+    margin-bottom: 0;
+
+    @include mq($lg) {
+      left: 20px;
+      margin-top: 0;
+      padding-top: 50px;
+      padding-left: 75px;
+      text-align: left;
+      font-size: 4em;
+      font-weight: 600;
+
+      &:nth-child(2) {
+        position: absolute;
+      }
+    }
+  }
+
+  // name
+  p {
+
+    &:nth-of-type(1) {
+      text-align: center;
+      margin-top: 0;
+      font-size: 2em;
+      font-weight: 900;
+      color: #000;
+      padding-left: 70px;
+
+      @include mq($lg) {
+        text-align: left;
+        font-size: 4em;
+        width: 100%;
+        // padding-top: 130px;
+        padding-left: 70px;
+        margin-bottom: 0;
+      }
+    }  
+
+    &:nth-of-type(2) {
+      @include mq($lg){
+        padding-left: 70px;
+      }
+    }    
+  }
+
+  h4 {
+    color: #000;
+    text-align: center;
+    margin: 0;
+    padding: 50px 0 0 0;
+    font-size: 2.1em;
+    font-weight: 900;
+
+    @include mq($lg) {
+      text-align: left;
+      padding-left: 70px;
+    }
+  }
+
+  p {
+    padding: 0px 50px 20px 50px;
+    font-size: 1.1em;
+    font-weight: 400;
+    margin-top: 10px;
+    color: rgb(83, 83, 83);
+    text-align: left;
+    line-height: 1.6;
+
+    @include mq($md) {
+      line-height: 1.5;
+      padding: 0px 70px 20px 70px;
+    }
+
+    @include mq($lg) {
+      text-align: left;
+    }
+
+    &:nth-of-type(2) {
+      @include mq($lg) {
+        padding-top: 0px;
+        margin-top: 0px;
+        font-size: 2em;
+        width: 100%;
+      }
+    }
+  }
+}
+
+ul .description {
+  padding: 0px 50px 20px 50px;
+}
+
+.description {
+  @include mq($lg) {
+    width: 60%; 
+  }
+}
+
+.me {
+  padding-bottom: 40px;
+  span {
+    font-weight: 600;
+    color: #000;
+  }
+}
+
+.more-info {
+  margin-top: 50px;
+  h2{
+    padding-bottom: 20px;
+  }
+}
+
+// offset for anchor tag that links to about me section to land on correct position
+#about {
+  &::before {
+    display: block;
+    content: " ";
+    margin-top: -45px;
+    height: 45px;
+    visibility: hidden;
+    pointer-events: none;
+
+  }
+}
+
+.text {
+
+}
+
+.languages {
+  // background-color: #fff;
+
+  h3 {
+   color: #000;
+
+  }
+
+  ul {
+    margin: 0 auto;
+    padding: 20px 30px 50px 30px;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    flex-wrap: wrap;
+    font-weight: 100;
+    font-size: 1.1em;
+
+    @include mq($lg) {
+      width: 40%;
+      text-align: left;
+      padding: 20px 0;
+      margin: 0 70px;
+      display: block;
+    }
+
+    li {
+      margin: 15px 0px;
+      padding: 10px;
+      font-weight: 500;
+
+      @include mq($xs) {
+        font-size: 1.2em;
+      }
+      
+      @include mq($lg) {
+        padding: 0 10px;
+      }
+    }
+  }
+}
+
+.skills {
+  // background-color: #5c5c5c;
+  // background-color: #fff;
+  padding-bottom: 40px;
+
+  h3 {
+    color: #000;
+  }
+
+  p {
+    color: #000;
+    &:nth-of-type(1) {
+      width: 61%;
+    }
+    &:nth-of-type(2) {
+      width: 61%;
+    }
+    &:nth-of-type(3) {
+      width: 52%;
+    }
+  }
+
+  ul {
+    text-align: center;
+    font-weight: 600;
+    padding: 0 5px;
+    list-style: none;
+
+    @include mq($lg) {
+      text-align: left;
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      padding-left: 70px;
+    }
+
+    li {
+      padding: 10px;
+    }
+  }
+}
+
+.summary {
+
+  @include mq($lg) {
+      width: 55%;
+    }
+}
+
+// Projects cards
+#projects h3{
+  font-size: 2.1em;
+}
+
+.card {
+
+  &:nth-of-type(1){
+
+    @include mqsmall($sm){
+
+      h4{
+        margin-top: 10px;
+      }
+    }
+  }
+  
+  h4 {
+    text-align: left;
+    font-weight: 400;
+    font-size: 1.6em;
+    color: #000;
+    padding-left: 10px;
+ 
+    // text-transform: uppercase;
+  }
+
+  &-description {
+    color: #000;
+    text-align: left;
+    font-size: 0.9em;
+    padding: 10px;
+
+    @include mq($sm) {
+      padding: 5px;
+    }
+  }
+}
+
+#email-link {
+  text-align: center;
+  margin: 10px;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.6s;
+
+    &:hover{
+      color: rgb(212, 212, 212);
+    }
+  }
+}
+
+footer .copyright {
+  color: #efefef;
+  padding: 10px;
+  text-align: center;
+}

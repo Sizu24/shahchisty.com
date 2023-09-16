@@ -1,0 +1,213 @@
+/* ----------------------- Buttons ----------------------- */
+
+// Landing page buttons
+#buttons {
+  padding-bottom: 200px;
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  a {
+    text-decoration: none;
+  }
+
+  @include mq($sm) {
+    display: block;
+  }
+
+  @include mq($md) {
+    // font-size: 1.7em; 
+    font-size: 1.2em;
+  }
+
+  @include mq($xl) {
+    padding-bottom: 400px;
+  }
+}
+
+.button {
+  opacity: 1.0;
+  border-radius: 10px;
+  border: 3px solid #fff;
+  background-color: transparent;
+  transition-timing-function: ease-in-out;
+  transition: 700ms;
+  font-weight: 400;
+  font-size: 0.7em;
+  color: #fff;
+  margin: 10px 30px;
+
+  @include mq($xs) {
+    font-size: 1.1em;
+  }
+
+  @include mq($md) {
+    font-size: 1.2em;
+  }
+
+  &:hover {
+    background-color: rgb(31, 31, 31);
+    color: #fff;
+    border-color: rgb(31, 31, 31);
+    cursor: pointer;
+  }
+
+// Landing page Button One
+  &.one {
+    padding: 10px 75px;
+    color: #000;
+    background-color: #fff;
+
+    @include mq($xs) {
+      padding: 10px 85px;
+    }
+
+    @include mq($md) {
+      padding: 10px 100px;
+      margin-top: 0;
+    }
+
+    @include mq($lg) {
+      padding: 8px 50px;
+    }
+
+    &:hover {
+      background-color: rgb(31, 31, 31);
+      color: #fff;
+    }
+  }
+
+// Landing page Button Two  
+  &.two {
+    padding: 5px 85px;
+
+    @include mq($xs) {
+      padding: 10px 95px;
+    }
+
+    @include mq($md) {
+      padding: 10px 113px;
+    }
+
+    @include mq($lg) {
+      padding: 8px 65px;
+    }
+
+  }
+  
+// Button Links
+  a:before {
+    text-decoration: none;    
+  }
+
+  a {
+
+    &:link {
+      text-decoration: none;
+    }
+    
+    &:hover {
+
+    }
+
+    &:active {
+
+    }
+
+    &:visited {
+      color: #000;
+    }
+  }
+}
+
+// // Project section card buttons
+
+// .go-button{
+//   font-size: 0.8em;
+//   background-color: transparent;
+//   color: #fff;
+//   padding: 10px 32px;
+//   border-radius: 5px;
+//   border: none;
+//   margin: 25px 5px 10px 5px;
+//   background-color: rgb(28, 156, 241);
+//   &:hover{
+//     background-color: blue;
+//     transition-duration: 1s;
+//     cursor: pointer;
+//   }
+//   @include mq($sm){
+//     margin: 10px 5px;
+//   }
+// }
+
+// // Card 1 Go button
+// .card:nth-of-type(1){
+//   button{
+//     margin-top: 10px;
+//   }
+
+//   @include mq($xi){
+//     button{
+//       margin-top: 30px;
+//     }
+//   }
+//   @include mq($sm){
+//       button{
+//         margin-top: 10px;
+//       }
+//   }
+// }
+// // Card 3 Go button
+// .card:nth-of-type(3){
+//   button {
+//     margin-top: 10px;
+//   }
+//   @include mq($xi){
+//     button{
+//       margin-top: 25px;
+//     }
+//   }
+//   @include mq($sm){
+//     button{
+//       margin-top: 10px;
+//     }
+
+//   }
+// }
+// // Card 5 Go button
+// .card:nth-of-type(5){
+//   button{
+//     margin-top: 15px;
+//   }
+  
+//   @include mq($xs){
+//     button{
+//       margin-top: 10px;
+//     }
+//   }
+
+// }
+// // Card 6 Go button
+// .card:nth-of-type(6){
+//   button{
+//     margin-top: 35px;
+//   }
+//   @include mq($xs){
+//     button{
+//       margin-top: 25px;
+//     }
+//   }
+
+// }
+
+// .code-button{
+//   font-size: 0.8em;
+//   background-color: transparent;
+//   border: 2px solid #fff;
+//   color: #fff;
+//   padding: 18px 38px;
+//   border-radius: 10px;
+//   margin: 0 5px;
+// }
