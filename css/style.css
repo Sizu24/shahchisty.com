@@ -820,6 +820,7 @@ footer {
   text-align: center;
   padding: 10px;
   font-size: 1.2em;
+  cursor: pointer;
 }
 @media (min-width: 321px) {
   .nav__links a {
