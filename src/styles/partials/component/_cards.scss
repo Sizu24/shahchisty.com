@@ -43,7 +43,7 @@
 
   @include mq($lg) {
     overflow-x: visible; 
-    margin: 20px;
+    margin: 20px 0;
     flex-wrap: wrap;
     justify-content: center;
   }

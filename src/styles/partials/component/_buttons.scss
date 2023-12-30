@@ -37,6 +37,7 @@
   font-size: 0.7em;
   color: #fff;
   margin: 10px 30px;
+  cursor: pointer;
 
   @include mq($xs) {
     font-size: 1.1em;
@@ -50,7 +51,6 @@
     background-color: rgb(31, 31, 31);
     color: #fff;
     border-color: rgb(31, 31, 31);
-    cursor: pointer;
   }
 
 // Landing page Button One

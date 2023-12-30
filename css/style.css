@@ -1,4 +1,6 @@
-/* ----------------------- Mixins ----------------------- */ /* ----------------------- Variables ----------------------- */ /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* ----------------------- Mixins ----------------------- */
+/* ----------------------- Variables ----------------------- */
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
 /**
@@ -978,7 +980,7 @@ footer {
 @media (min-width: 1024px) {
   .projects__cards {
     overflow-x: visible;
-    margin: 20px;
+    margin: 20px 0;
     flex-wrap: wrap;
     justify-content: center;
   }
@@ -1161,6 +1163,10 @@ footer {
   padding: 5px;
   font-size: 2rem;
   color: #fff;
+  transition: 0.6s;
+}
+.footer__social:hover {
+  opacity: 0.6;
 }
 
 footer ul {
@@ -1312,6 +1318,7 @@ a.social:hover {
   font-size: 0.7em;
   color: #fff;
   margin: 10px 30px;
+  cursor: pointer;
 }
 @media (min-width: 321px) {
   .button {
@@ -1327,7 +1334,6 @@ a.social:hover {
   background-color: rgb(31, 31, 31);
   color: #fff;
   border-color: rgb(31, 31, 31);
-  cursor: pointer;
 }
 .button.one {
   padding: 10px 75px;
